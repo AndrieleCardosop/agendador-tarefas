@@ -1,11 +1,10 @@
 package com.andriele.agendadortarefas.business.DTO;
 
-import com.andriele.agendadortarefas.infrastructure.enums.StatusNotificacao;
+import com.andriele.agendadortarefas.infrastructure.enums.StatusNotificacaoEnum;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.regex.Pattern;
 
 @Setter
 @Getter
@@ -24,5 +23,5 @@ public class TarefasDTO {
     private String emailUsuario;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy HH:mm:ss")
     private LocalDateTime dataAlteracao;
-    private StatusNotificacao statusNotificacaoEnum;
+    private StatusNotificacaoEnum statusNotificacaoEnum;
 }

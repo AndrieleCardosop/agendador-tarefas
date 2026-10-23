@@ -1,11 +1,10 @@
 package com.andriele.agendadortarefas.infrastructure.entity;
 
-import com.andriele.agendadortarefas.infrastructure.enums.StatusNotificacao;
+import com.andriele.agendadortarefas.infrastructure.enums.StatusNotificacaoEnum;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 @Setter
 @Getter
@@ -23,5 +22,5 @@ public class TarefasEntity {
     private LocalDateTime dataEvento;
     private String emailUsuario;
     private LocalDateTime dataAlteracao;
-    private StatusNotificacao statusNotificacaoEnum;
+    private StatusNotificacaoEnum statusNotificacaoEnum;
 }
